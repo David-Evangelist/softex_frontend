@@ -4,7 +4,7 @@ let novoSalario;
 if (salario < 2000) {
   novoSalario = salario * 1.15;
 
-  //salario = salario * 1.15;
+  // O mesmo que --> salario = salario * 1.15;
   salario *= 1.15;
 
   console.log(salario);
@@ -13,6 +13,8 @@ if (salario < 2000) {
   salario *= 1.07;
   console.log(salario);
 }
+
+// #### USANDO += ####
 
 // let salario = Number(prompt("Digite o salário: "));
 
