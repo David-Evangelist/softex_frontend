@@ -1,4 +1,8 @@
-// Q #01 --------------------------------
+/*
+1. Maior número:
+Peça ao usuário dois números e mostre o maior entre eles.
+*/
+
 let num1 = Number(prompt("Digite o primeiro número: "));
 let num2 = Number(prompt("Digite o segundo número: "));
 

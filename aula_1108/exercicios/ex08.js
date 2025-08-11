@@ -1,3 +1,8 @@
+/*
+8. Reajuste salarial:
+Peça o salário atual. Se for menor que 2000, aumente 15%. Senão, aumente 7%. Mostre o novo salário 
+*/
+
 let salario = Number(prompt("Digite o salário: "));
 let novoSalario;
 

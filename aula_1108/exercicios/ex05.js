@@ -1,3 +1,7 @@
+/*
+5. Par ou Ímpar:
+*/
+
 let num = Number(prompt("Digite o número: "));
 
 if (num % 2 == 0) {

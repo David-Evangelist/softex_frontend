@@ -1,4 +1,6 @@
-// Q #02 --------------------------------
+/*
+2. Maior idade:
+*/ 
 let age = Number(prompt("Digite sua idade: "));
 
 if (age >= 18) {

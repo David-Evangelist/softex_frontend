@@ -1,3 +1,8 @@
+/*
+9. Operações básicas:
+Peça dois números inteiros e mostre a soma, subtração, multiplicação e divisão.
+*/
+
 let num1 = Number(prompt("Digite o 1º número:"));
 let num2 = Number(prompt("Digite o 2º número:"));
 
