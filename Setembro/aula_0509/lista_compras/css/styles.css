@@ -1,0 +1,103 @@
+/* ESTILIZAÇÕES GLOBAIS */
+/* body {
+background-image: radial-gradient(circle, rgb(199, 218, 174), rgb(174, 204, 174));
+} */
+
+main,
+form,
+.input-container,
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+ol {
+  min-width: 30rem;
+  border-radius: 1rem;
+}
+
+main {
+  align-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+form {
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(95, 142, 204, 0.63),
+    rgb(153, 204, 233, 0.63)
+  );
+  padding: 3rem;
+  gap: 2.5rem;
+}
+
+.input-container {
+  gap: 0.5rem;
+
+  label {
+    display: block;
+    color: rgb(39, 39, 39);
+    font-size: 1.2rem;
+  }
+
+  input {
+    padding: 0.5rem 1.8rem;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  input:focus {
+    outline-color: rgba(46, 168, 168, 0.623);
+  }
+
+  input::placeholder {
+    color: rgb(194, 196, 196);
+  }
+}
+
+.btn-container {
+  gap: 1rem;
+
+  button {
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 1rem;
+    transition: background-color 0.2s ease-in;
+  }
+
+  .btn-add:hover {
+    background-color: rgb(94, 184, 212);
+  }
+  .btn-remove:hover {
+    background-color: rgb(212, 94, 94);
+  }
+}
+
+table {
+  min-width: 30rem;
+  text-align: center;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.8rem;
+  }
+
+  td {
+    border-top: 0.1rem solid gainsboro;
+  }
+
+  thead {
+    background: rgb(100, 100, 100);
+    color: #fff;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgb(243, 243, 243);
+  }
+}
