@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>Lista de Compras</title>
-    </head>
-    <body>
-        <main>
-            <form id="form">
-                <div class="input-container">
-                    <label for="itens">Itens:</label>
-                    <input
-                        type="text"
-                        id="itens"
-                        name="itens"
-                        placeholder="Digite o nome do produto"
-                        value>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Lista de Compras</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title-h1">Lista de Produtos</h1>
+      <form id="form">
+        <div class="input-container">
+          <label for="itens">Itens:</label>
+          <input
+            type="text"
+            id="itens"
+            name="itens"
+            placeholder="Digite o nome do produto"
+            value
+          />
+        </div>
 
-                <div class="btn-container">
-                    <button type="submit" class="btn-add">Adicionar</button>
-                    <button class="btn-remove">Remover</button>
-                </div>
+        <div class="btn-container">
+          <button type="submit" class="btn-add">Adicionar</button>
+          <!-- <button class="btn-remove">Remover</button> -->
+        </div>
+      </form>
 
-            </form>
+      <table id="table" class="display-none">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Produtos</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </main>
 
-            <table>
-                <thead>
-                    <th>ID</th>
-                    <th>Produtos</th>
-                </thead>
-                <tbody id="table-body">
-                </tbody>
-            </table>
-
-        </main>
-
-        <script src="./script.js"></script>
-    </body>
+    <script src="./script.js"></script>
+  </body>
 </html>

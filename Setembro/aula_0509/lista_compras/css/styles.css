@@ -1,7 +1,11 @@
 /* ESTILIZAÇÕES GLOBAIS */
-/* body {
-background-image: radial-gradient(circle, rgb(199, 218, 174), rgb(174, 204, 174));
-} */
+body {
+  background-image: linear-gradient(130deg, #aac2d4, #dde7ee);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 1rem;
+}
 
 main,
 form,
@@ -11,30 +15,30 @@ form,
   flex-direction: column;
 }
 
-form,
-ol {
-  min-width: 30rem;
-  border-radius: 1rem;
-}
-
 main {
   align-items: center;
   padding: 1.5rem;
   gap: 2rem;
 }
 
+.title-h1 {
+  font-size: 3.4rem;
+  color: rgb(23, 23, 23);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
 form {
+  min-width: 45rem;
+  border-radius: 1rem;
   align-items: center;
-  background: linear-gradient(
-    45deg,
-    rgba(95, 142, 204, 0.63),
-    rgb(153, 204, 233, 0.63)
-  );
+  background: rgba(255, 255, 255, 0.5);
   padding: 3rem;
   gap: 2.5rem;
+  box-shadow: 0 0 0.5rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .input-container {
+  width: 100%;
   gap: 0.5rem;
 
   label {
@@ -44,17 +48,17 @@ form {
   }
 
   input {
-    padding: 0.5rem 1.8rem;
+    padding: 1rem 1.8rem;
     border: none;
     border-radius: 1rem;
   }
 
   input:focus {
-    outline-color: rgba(46, 168, 168, 0.623);
+    outline-color: rgba(45, 205, 205, 0.623);
   }
 
   input::placeholder {
-    color: rgb(194, 196, 196);
+    color: rgb(149, 150, 150);
   }
 }
 
@@ -68,36 +72,85 @@ form {
     border-style: none;
     border-radius: 1rem;
     transition: background-color 0.2s ease-in;
+    font-weight: 600;
   }
 
+  .btn-add,
+  .btn-remove {
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  }
+
+  .btn-add {
+    background-color: rgba(106, 184, 208, 0.632);
+  }
   .btn-add:hover {
-    background-color: rgb(94, 184, 212);
+    background-color: rgb(47, 178, 218);
+    color: #fff;
+  }
+  .btn-remove {
+    background-color: rgba(205, 116, 116, 0.859);
   }
   .btn-remove:hover {
-    background-color: rgb(212, 94, 94);
+    background-color: rgb(209, 53, 53);
+    color: #fff;
   }
 }
 
 table {
-  min-width: 30rem;
+  width: 60rem;
   text-align: center;
   border-collapse: collapse;
+  background: linear-gradient(130deg, #9ca1d8, #7178c8);
+  color: #fff;
+  box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
 
   th,
   td {
-    padding: 0.8rem;
+    padding: 1rem;
   }
 
   td {
-    border-top: 0.1rem solid gainsboro;
+    border-top: 0.1rem solid rgba(220, 220, 220, 0.516);
   }
 
   thead {
-    background: rgb(100, 100, 100);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.45);
+    color: rgb(7, 65, 104);
   }
 
-  tr:nth-child(even) {
-    background-color: rgb(243, 243, 243);
+  tr {
+    border-radius: 1rem;
   }
+
+  .td-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  .btn-remove-item {
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    color: rgb(209, 53, 53);
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+  }
+
+  .btn-remove-item:hover {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+  }
+
+  /* tr:nth-child(even) {
+    background-color: rgb(243, 243, 243);
+  } */
+}
+
+.display-none {
+  display: none;
 }
