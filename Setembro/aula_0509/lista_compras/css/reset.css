@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100svh;
+  min-width: 100svw;
   font-family: sans-serif;
 }
 

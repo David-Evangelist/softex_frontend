@@ -15,26 +15,32 @@ form,
   flex-direction: column;
 }
 
+form,
+.btn-actions-container {
+  min-width: 45rem;
+  border-radius: 1rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0.5rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
 main {
   align-items: center;
   padding: 1.5rem;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .title-h1 {
+  margin-bottom: 2rem;
   font-size: 3.4rem;
   color: rgb(23, 23, 23);
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 form {
-  min-width: 45rem;
-  border-radius: 1rem;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.5);
   padding: 3rem;
   gap: 2.5rem;
-  box-shadow: 0 0 0.5rem 0.4rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8rem;
 }
 
 .input-container {
@@ -96,9 +102,34 @@ form {
   }
 }
 
+.btn-actions-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+
+  button {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 1.2rem;
+    padding: 0.5rem 0.9rem;
+    background-color: #9ca1d877;
+    width: 10rem;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #7178c8;
+  }
+}
+
 table {
   width: 60rem;
   text-align: center;
+  /* align-items: center; */
   border-collapse: collapse;
   background: linear-gradient(130deg, #9ca1d8, #7178c8);
   color: #fff;
@@ -106,7 +137,8 @@ table {
 
   th,
   td {
-    padding: 1rem;
+    line-height: 1.4;
+    padding: 1.2rem;
   }
 
   td {
@@ -124,7 +156,6 @@ table {
 
   .td-item {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     position: relative;
   }
@@ -146,11 +177,8 @@ table {
     color: rgb(255, 0, 0);
   }
 
-  /* tr:nth-child(even) {
-    background-color: rgb(243, 243, 243);
-  } */
-}
-
+ }
+/* 
 .display-none {
   display: none;
-}
+} */

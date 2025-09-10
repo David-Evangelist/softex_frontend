@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Lista de Compras</title>
   </head>
   <body>
@@ -18,17 +19,21 @@
             id="itens"
             name="itens"
             placeholder="Digite o nome do produto"
-            value
-          />
+            value />
         </div>
 
         <div class="btn-container">
           <button type="submit" class="btn-add">Adicionar</button>
-          <!-- <button class="btn-remove">Remover</button> -->
         </div>
       </form>
 
-      <table id="table" class="display-none">
+      <div class="btn-actions-container">
+        <button onclick="ordenarTable()">Ordenar</button>
+        <button>Procurar</button>
+        <button>wee</button>
+      </div>
+
+      <table id="table" class="display-none" onmouse>
         <thead>
           <tr>
             <th>ID</th>

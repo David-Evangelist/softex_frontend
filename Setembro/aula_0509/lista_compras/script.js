@@ -47,3 +47,19 @@ function removeItens(index) {
   }
   updateTable();
 }
+
+let isOrder = false;
+
+function ordenarTable() {
+  if (arrayItens.length === 0) {
+    if (!isOrder) {
+      arrayItens.sort();
+      isOrder = true;
+    } else {
+      arrayItens;
+      isOrder = false;
+    }
+  }
+  console.log("foi");
+  updateTable();
+}
